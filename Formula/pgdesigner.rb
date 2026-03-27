@@ -1,28 +1,28 @@
 class Pgdesigner < Formula
   desc "PostgreSQL schema designer — ERD, linting, diffing, sample data"
   homepage "https://pgdesigner.io"
-  version "0.0.1"
+  version "0.0.2"
   license "PolyForm-Noncommercial-1.0.0"
 
   on_macos do
     on_arm do
       url "https://github.com/vmkteam/pgdesigner/releases/download/v#{version}/pgdesigner-darwin-arm64.tar.gz"
-      sha256 "40f319843d23fa06ba9d4db2748ecef3524e38466f5a42b119e330a34b901fa1"
+      sha256 "994a92c07ca621bdf00f6e203c523de9e18f225ae9608312042ba1cf13d0e64f"
     end
     on_intel do
       url "https://github.com/vmkteam/pgdesigner/releases/download/v#{version}/pgdesigner-darwin-amd64.tar.gz"
-      sha256 "68c372ba5227f20faa86ae3d82e32b941ad2ec6fac77b66278c3f35932df33e9"
+      sha256 "a9b2800b6a4ec7544f8a0014ce51928d1c4f8d171f739e32aed0983c6a795cc2"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/vmkteam/pgdesigner/releases/download/v#{version}/pgdesigner-linux-arm64.tar.gz"
-      sha256 "18ab0bfb16a5b6c0bf59cea518b3169585ba8c61cd2ab7c5bf9721e1949bdf6d"
+      sha256 "ceb4872432177087b6cc280a9036f4b0cc9c1a3cbe55b5a9fefdc1df1b28b874"
     end
     on_intel do
       url "https://github.com/vmkteam/pgdesigner/releases/download/v#{version}/pgdesigner-linux-amd64.tar.gz"
-      sha256 "6336c01436c12e1ecf57df3d664b9015e90b80255962977ccd278aa46eaebc24"
+      sha256 "13500764944c2e78a42efd899484bb9d374c654947c8445008232cf5a8541b91"
     end
   end
 
