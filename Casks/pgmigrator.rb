@@ -14,22 +14,22 @@ cask "pgmigrator" do
   on_macos do
     on_intel do
       url "https://github.com/vmkteam/pgmigrator/releases/download/v#{version}/pgmigrator_#{version}_darwin_amd64.tar.gz"
-      sha256 "eaf90dcf3656f5605b16d5ee008ba782334dbcef975cfc7f3483823c4b1b689a"
+      sha256 "7faf1a242d9018660206a82387c8793f81c6ab7d2ca2c1150855cf0e19f1ce39"
     end
     on_arm do
       url "https://github.com/vmkteam/pgmigrator/releases/download/v#{version}/pgmigrator_#{version}_darwin_arm64.tar.gz"
-      sha256 "8791f4c8382fc6c1426b3c0149704f98ed4d380de7d57f12e2e0069aea269a00"
+      sha256 "d229b1fabbfdee58a639e297ad2eb439388dacdbb81f4e90d792eca19e8ddd1c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/vmkteam/pgmigrator/releases/download/v#{version}/pgmigrator_#{version}_linux_amd64.tar.gz"
-      sha256 "d1da5414d24ca7b836695b851c39e77711a7235fd1d0992351a9187ea280ba7a"
+      sha256 "c5ae2f7287e86e83a21a736b39b5c1ba0e5ae8fbd0e5f4290ea2a058c682509b"
     end
     on_arm do
       url "https://github.com/vmkteam/pgmigrator/releases/download/v#{version}/pgmigrator_#{version}_linux_arm64.tar.gz"
-      sha256 "5bdec2698c4603ee6d1512c65b292b99d40333e4266b973c608aea46528e4505"
+      sha256 "2da7fb7fb1b0519ec8f5f451d313953e2bb4b8e4c498fc0263e62da6aa61ba30"
     end
   end
 
