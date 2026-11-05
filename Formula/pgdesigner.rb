@@ -5,21 +5,21 @@
 class Pgdesigner < Formula
   desc "PostgreSQL schema designer — ERD, linting, diffing, sample data"
   homepage "https://pgdesigner.io"
-  version "0.0.6"
-  license "PolyForm-Noncommercial-1.0.0"
+  version "0.1.0"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vmkteam/pgdesigner/releases/download/v0.0.6/pgdesigner-darwin-amd64.tar.gz"
-      sha256 "a0e4fcb14516769be83f6b4222a91ba4d7daaf36ce7b4b804369eabf39dd5531"
+      url "https://github.com/vmkteam/pgdesigner/releases/download/v0.1.0/pgdesigner-darwin-amd64.tar.gz"
+      sha256 "9b6b33936a4555261eb03cd9b705be56986573c49d4bc5d709a8327df11702d6"
 
       define_method(:install) do
         bin.install "pgdesigner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vmkteam/pgdesigner/releases/download/v0.0.6/pgdesigner-darwin-arm64.tar.gz"
-      sha256 "c8a471ad4d0a433a7b26b99c6384003fe5ca31444e8f4897cbdc8abc5019d9df"
+      url "https://github.com/vmkteam/pgdesigner/releases/download/v0.1.0/pgdesigner-darwin-arm64.tar.gz"
+      sha256 "eceaf2017f085ab22faa281200a2e07f7371408402430d086ff1ca9877f42a6f"
 
       define_method(:install) do
         bin.install "pgdesigner"
@@ -29,15 +29,15 @@ class Pgdesigner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmkteam/pgdesigner/releases/download/v0.0.6/pgdesigner-linux-amd64.tar.gz"
-      sha256 "b8887b92d0e59444163c8708c8dc72fc6bcb4d682266edd2596b5d6435f30a64"
+      url "https://github.com/vmkteam/pgdesigner/releases/download/v0.1.0/pgdesigner-linux-amd64.tar.gz"
+      sha256 "b8f522b4574c371dd744537e00030bb49181771efc4903a97f906682577fd522"
       define_method(:install) do
         bin.install "pgdesigner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmkteam/pgdesigner/releases/download/v0.0.6/pgdesigner-linux-arm64.tar.gz"
-      sha256 "5c8758673a6572c4ddf39ae3f228208d15b18f283d94a882ce30afdb1dc0ecc9"
+      url "https://github.com/vmkteam/pgdesigner/releases/download/v0.1.0/pgdesigner-linux-arm64.tar.gz"
+      sha256 "8b956927e029b1bba31cdeb7efe7dda45e03ca93ec915a240e7e891896c7406f"
       define_method(:install) do
         bin.install "pgdesigner"
       end
